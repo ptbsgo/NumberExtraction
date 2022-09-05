@@ -1,0 +1,28 @@
+----------------------------
+# 根据文件路径读出数据
+# df_obj = pd.read_csv(filename,usecols=['用户账号','游戏金额'],encoding='gbk')
+
+# df_obj = pd.read_csv(filename,encoding='gbk')
+# ToNumber = df_obj['用户账号']
+#
+# money = df_obj['游戏金额']
+# 查看前5行数据，
+# print(list(ToNumber))
+# print(list(money))
+# print(df_obj.sort_index())
+# print(df_obj.sort_values('游戏金额',ascending=False))  #降序排序
+# print(df_obj.duplicated())
+
+# df_obj.fillna('XXXXXXXX',inplace=True)   #填充NaN
+
+# df_obj_data_sum = df_obj_new.groupby(by=['用户账号']).agg({'游戏金额':sum}).reset_index(drop=True)     #相同用户账号 金额求和
+# df_obj_data_sum.sort_values('游戏金额',inplace=True,ascending=False)
+
+# df_obj_data_one = df_obj_new.drop_duplicates(subset=['用户账号','游戏金额'] ,keep="first").reset_index(drop=True) #保留第一条重复的数据：keep="first"
+
+# 第一列转成列表
+#df_obj_new = pd.read_csv(filename,usecols=[0],encoding='utf-8')
+# df_arr = np.asarray(df_obj_new.stack())
+# username_list = df_arr.tolist()
+# print(username_list)
+----------------------------
