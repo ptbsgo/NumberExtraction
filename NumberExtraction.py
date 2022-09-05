@@ -44,7 +44,7 @@ def judge_phone_and_qq_number(accounts):
     qq = []
     try:
         for account in accounts:
-            p = re.findall('(13\d{9}|14[5|7|9]\d{8}|15\d{9}|166\d{8}|17[1|3|5|6|7|8]{\d{8}|18\d{9}|19[9|8]\d{8})',  #re正则 识别手机
+            p = re.findall('(13\d{9}|14[5|7|9]\d{8}|15\d{9}|166\d{8}|17[1|3|5|6|7|8]\d{8}|18\d{9}|19[9|8]\d{8})',  #re正则 识别手机
                            account, re.S)
             if p == []:
                 q = re.findall('[1-9][0-9]{4,12}', account, re.S)                #re正则识别QQ  不确定QQ 是否最长13位
